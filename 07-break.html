@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+/*
+使用循环来模拟 电梯
+
+  大楼有6层，每一层都是通过电梯来上去的
+ */
+
+// for(var i = 1; i <= 6; i++){
+//   console.log(i + '楼到了');
+// }
+
+/* 教室在3楼，我们只需要上到3楼就行了，电梯就只需要从1楼到3楼即可，后面的456就不上去 */
+
+/*
+  循环里面，有可能会根据某些条件，让循环不再继续执行
+    关键字 - break
+      作用是终止循环的继续执行
+
+      1.可以终止循环的执行
+      2.break之后的代码都不执行了
+ */
+
+for(var i =1; i <= 6;i++){
+  console.log(i + '楼到了');
+  if(i === 3){
+    console.log('三楼到了，我要下去，停一下');
+    /* 希望电梯不在往上，要让循环停止 */
+    break;
+    console.log(123);
+  }
+  console.log(456);
+}
+</script>
+</html>

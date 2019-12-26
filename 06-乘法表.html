@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+/*
+
+  要在页面上显示 99 乘法表
+    第一行 是一个
+    第二行是 两个
+    ...
+
+    每一行里面的内容， 都是  列 x 行 = 乘积
+
+    只需要把星星替换为  列 x 行 = 乘积  就行了
+ */
+for (var i = 1; i <= 8; i++) {
+    for (var j = 1; j <= i; j++) {
+      if(i * j < 10){
+        // 如果是小于10的乘积，会比大于10的乘积小一个位数，我们使用两个个空格来补全位置
+        document.write(j + ' x ' + i + ' = ' + i * j +'&nbsp;&nbsp;&nbsp');
+      }else {
+        document.write(j + ' x ' + i + ' = ' + i * j +'&nbsp');
+      }
+
+    }
+    document.write('<br>');
+  }
+</script>
+</html>

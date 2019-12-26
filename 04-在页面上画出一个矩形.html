@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- ☆☆☆☆☆<br>
+    ☆☆☆☆☆<br>
+    ☆☆☆☆☆<br>
+    ☆☆☆☆☆<br> -->
+</body>
+<script>
+  /* 在页面中要输出一些内容 */
+  // document.write('☆☆☆☆☆<br>');
+  // document.write('☆☆☆☆☆<br>');
+  // document.write('☆☆☆☆☆<br>');
+  // document.write('☆☆☆☆☆<br>');
+
+  // 发现代码是重复的
+  // for(var i = 1; i <= 4; i++){
+  //   document.write('☆☆☆☆☆<br>');
+  // }
+
+  // 发现每一行里面的星星的个数也是重复的
+  // for(var j = 1; j <= 5; j++){
+  //   document.write('☆');
+  // }
+  // document.write('<br>');
+  // for(var j = 1; j <= 5; j++){
+  //   document.write('☆');
+  // }
+  // document.write('<br>');
+  // for(var j = 1; j <= 5; j++){
+  //   document.write('☆');
+  // }
+  // document.write('<br>');
+  // for(var j = 1; j <= 5; j++){
+  //   document.write('☆');
+  // }
+  // document.write('<br>');
+
+  // 发现每一行的代码都是重复的
+  // 使用双重循环来实现
+  // 使用i控制行数，使用j控制每一列
+
+  for (var i = 1; i <= 8; i++) {
+    for (var j = 1; j <= 10; j++) {
+      document.write('☆');
+    }
+    document.write('<br>');
+  }
+</script>
+
+</html>
